@@ -14,9 +14,13 @@ import AVFoundation
     /**
      This plugin provides the decibel level from the microphone.
      */
-    override init(commandDelegate: CDVCommandDelegate) {
+    init(commandDelegate: CDVCommandDelegate) {
         super.init()
         self.commandDelegate = commandDelegate
+    }
+
+    override init() {
+        super.init();
     }
 
     /**
